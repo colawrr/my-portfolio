@@ -16,7 +16,9 @@ header {
     flex-wrap: wrap;
     align-items: center;
     background-color: rgb(33, 36, 36);
-    
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 header h1 a {
@@ -71,6 +73,7 @@ header nav ul li a:hover {
     background-color: rgba(33, 36, 36, .8);
     width: 50%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -87,6 +90,7 @@ footer div {
     padding: 40px 35px;
     color: white;
     font-size: 30px;
+    text-overflow: inherit;
 }
 footer div h4 {
     justify-content: space-between;
@@ -110,3 +114,102 @@ footer h2 {
     padding: 30px 45px;
     border-right: 3px solid white;
 }
+
+
+#display {
+    width: 100%;
+    height: 1000px;
+    background-color: cadetblue;
+    position: relative;
+    justify-content: space-between;
+}
+
+
+.about-me {
+    font-size: 35px;
+    padding: 10px;
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+    border-right: 5px solid white;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: rgba(33, 36, 36, .8);
+}
+
+.about-me-text {
+    width: 1200px;
+    height: 500px;
+    padding: 15px auto;
+    margin-top: 10px;
+    margin-left: 390px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(33, 36, 36, .8);
+    text-overflow: inherit;
+}
+
+.work {
+    font-size: 35px;
+    padding: 30px;
+    width: 300px;
+    height: 450px;
+    margin: 10px auto;
+    border-right: 5px solid white;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: rgba(33, 36, 36, .8);
+}
+
+.work-box-1 {
+    margin-top: 20px;
+    margin-left: 390px;
+    width: 590px;
+    height: 200px;
+    text-align: center;
+     background-color: rgba(33, 36, 36, .8);
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-box-2 {
+    margin-top: 20px;
+    margin-left: 1000px;
+    width: 590px;
+    height: 200px;
+    text-align: center;
+     background-color: rgba(33, 36, 36, .8);
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+.work-box-3 {
+    margin-top: 250px;
+    margin-left: 390px;
+    width: 590px;
+    height: 200px;
+    text-align: center;
+     background-color: rgba(33, 36, 36, .8);
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+.work-box-4 {
+    margin-top: 250px;
+    margin-left: 1000px;
+    width: 590px;
+    height: 200px;
+    text-align: center;
+     background-color: rgba(33, 36, 36, .8);
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
