@@ -263,3 +263,46 @@ footer h2 {
     font-style: italic;
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS */
+
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+        padding-bottom: 0;
+        position: relative;
+    }
+    header h1 a {
+        justify-content: center;
+        width: 100%;
+    }
+    header nav ul {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    header nav ul li a {
+        font-size: 15px;
+    }
+    footer, footer div, footer div h4, footer h4, footer div a, footer h2 {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+    }
+    .hero, .hero h2, #display, .about-me,.about-me-text, .work, .work-box-1, .work-box-2, .work-box-3, .work-box-4 {
+        text-align: center;
+        flex: 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hero h2 {
+        width: 100%;
+    }
+    .work, .about-me {
+        width: 95%;
+    }
+    footer {
+        text-align: center;
+        width: 100%;
+    }
+}
