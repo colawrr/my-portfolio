@@ -216,6 +216,7 @@ footer h2 {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
+    text-decoration: none;
 }
 
 .work-box-2:hover{
@@ -223,6 +224,16 @@ footer h2 {
     border-radius: 20px;
     text-shadow: none;
     font-style: italic;
+}
+
+.work-box-2 h2 {
+    margin: 0 auto;
+    padding: 50px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    text-decoration: none;
 }
 
 .work-box-3 {
