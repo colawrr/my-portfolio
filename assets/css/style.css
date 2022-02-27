@@ -128,10 +128,9 @@ footer h2 {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
-    height: 1200px;
+    height: 100%;
     background-color: rgb(33, 36, 36);
-    position: relative;
-    justify-content: space-between;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -139,7 +138,6 @@ footer h2 {
 .about-me {
     font-size: 35px;
     padding: 20px;
-    width: 300px;
     height: 400px;
     margin: 0 auto;
     border-right: 5px solid white;
@@ -154,26 +152,25 @@ footer h2 {
 
 .about-me-text {
     font-size: 28px;
-    width: 1200px;
-    height: 500px;
-    padding: 35px 35px;
-    margin-left: 390px;
+    padding: 35px;
+    width: 70%;
+    text-align: center;
     line-height: 2;
     text-align: left;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(104, 101, 101);
-    
+    background-color: rgb(104, 101, 101);  
+    margin-left: 350px; 
 }
+
 
 .work {
     font-size: 35px;
     padding: 70px;
-    width: 300px;
-    height: 450px;
-    margin: 10px auto;
+    margin-top: 30px;
+    margin-left: 8px;
+    height: 200px;
     border-right: 5px solid white;
-    position: absolute;
     text-align: center;
     align-items: center;
     display: flex;
@@ -181,13 +178,14 @@ footer h2 {
 }
 
 .work-box-1 {
-    margin-top: 20px;
-    margin-left: 390px;
-    width: 590px;
-    height: 200px;
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 1vw;
+    display: block;
+    padding: 35px;
+    width: 35%;
+    margin-left: 61px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
     background-color: rgb(104, 101, 101);
 }
 
@@ -197,8 +195,7 @@ footer h2 {
     text-shadow: none;
     font-style: italic;
 }
-.work-box-1 p {
-    margin: 0 auto;
+.work-box-1 h2 {
     padding: 50px;
     color: white;
     align-items: center;
@@ -207,16 +204,15 @@ footer h2 {
 }
 
 .work-box-2 {
-    margin-top: 20px;
-    margin-left: 1000px;
-    width: 590px;
-    height: 200px;
+    font-size: 28px;
+    display: block;
+    padding: 35px;
+    width: 35%;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
     text-align: center;
     background-color: rgb(104, 101, 101);
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    text-decoration: none;
 }
 
 .work-box-2:hover{
@@ -227,60 +223,22 @@ footer h2 {
 }
 
 .work-box-2 h2 {
-    margin: 0 auto;
     padding: 50px;
     color: white;
     align-items: center;
     text-align: center;
     font-size: 28px;
-    text-decoration: none;
-}
-
-.work-box-3 {
-    margin-top: 250px;
-    margin-left: 390px;
-    width: 590px;
-    height: 200px;
     text-align: center;
-    background-color: rgb(104, 101, 101);
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.work-box-3:hover{
-    background-color: tan;
-    border-radius: 20px;
-    text-shadow: none;
-    font-style: italic;
-}
-
-.work-box-4 {
-    margin-top: 250px;
-    margin-left: 1000px;
-    width: 590px;
-    height: 200px;
-    text-align: center;
-    background-color: rgb(104, 101, 101);
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.work-box-4:hover{
-    background-color: tan;
-    border-radius: 20px;
-    text-shadow: none;
-    font-style: italic;
-}
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS */
 
 @media screen and (max-width: 980px) {
     header {
         justify-content: center;
-        padding-bottom: 0;
-        position: relative;
+        width: 100%;
+        margin: auto;
     }
     header h1 a {
         justify-content: center;
@@ -294,26 +252,60 @@ footer h2 {
     header nav ul li a {
         font-size: 15px;
     }
-    footer, footer div, footer div h4, footer h4, footer div a, footer h2 {
-        text-align: center;
-        width: 100%;
-        padding: 10px;
-    }
-    .hero, .hero h2, #display, .about-me,.about-me-text, .work, .work-box-1, .work-box-2, .work-box-3, .work-box-4 {
-        text-align: center;
-        flex: 100%;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .hero h2 {
-        width: 100%;
-    }
-    .work, .about-me {
-        width: 95%;
-    }
     footer {
         text-align: center;
         width: 100%;
+        margin: auto;
+    }
+    .hero, .hero h2 {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    #display {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    .about-me-text {
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    .about-me {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .hero h2 {
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+    .work, .about-me, .about-me-text p, .work, .work-box-1, .work-box-2 {
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
+    footer, footer div, footer h4, footer a{
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        font-size: 4.7vw;
+    }
+
+    header {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        align-items: center;
     }
 }
